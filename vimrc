@@ -281,8 +281,6 @@ let java_allow_cpp_keywords = 1
 " I don't want to have the default keymappings for my scala plugin evaluated
 let g:scala_use_default_keymappings = 0
 
-" System default for mappings is now the "," character
-let mapleader = ","
 
 " Wipe out all buffers
 nmap <silent> ,wa :call BWipeoutAll()<cr>
