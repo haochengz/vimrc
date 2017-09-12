@@ -8,6 +8,8 @@
 " Global Stuff
 "-----------------------------------------------------------------------------
 
+let mapleader = "\<Space>"
+
 " I use solirized theme and set theme for terminal, so vim theme seems also
 " set up with terminal settings, but does not precise, so I add this
 " background setting, that made vim theme right
