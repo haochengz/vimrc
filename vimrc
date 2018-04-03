@@ -466,7 +466,7 @@ set synmaxcol=2048
 " It's sure slow the computer but it also fix the refreash flash problem, window and flash when you moving curses outside the window
 " But the color are ugly, I am try to modify it.
 set cursorline
-hi CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=darkred guifg=white
+hi CursorLine   cterm=NONE ctermbg=None ctermfg=NONE guibg=darkred guifg=white
 set nocursorcolumn
 
 if has("mac")
@@ -492,9 +492,9 @@ augroup END
 "-----------------------------------------------------------------------------
 " Indent Guides
 "-----------------------------------------------------------------------------
-let g:indent_guides_color_change_percent = 3
-"let g:indent_guides_guide_size = 1
-let g:indent_guides_enable_on_vim_startup = 1
+"let g:indent_guides_color_change_percent = 1
+"let g:indent_guides_guide_size = 0
+"let g:indent_guides_enable_on_vim_startup = 0
 
 "-----------------------------------------------------------------------------
 " Fugitive this will operate git in vim
@@ -1021,7 +1021,9 @@ endif
 
 set t_Co=256
 set background=dark
-colorscheme solarized
+hi Normal ctermfg=None ctermbg=None
+colorscheme Atelier_LakesideLight
+colorscheme Atelier_EstuaryDark
 
 "-----------------------------------------------------------------------------
 " Local system overrides
